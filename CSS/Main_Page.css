@@ -1,0 +1,420 @@
+body {
+  text-align: center;
+}
+
+audio {
+  display: none;
+}
+
+#Glitch1-BG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+#Glitch2-BG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+#Glitch3-BG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+#vid-BG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+}
+
+#mainbar {
+  z-index: 1;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 3%;
+  right: 0;
+  bottom: 0;
+  min-width: 25%;
+  min-height: 100%;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0.4))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.vleft {
+  position: fixed;
+  top: 0;
+  margin-left: 2.6%;
+  border-left: 3px solid black;
+  height: 100%;
+}
+
+.vright {
+  position: fixed;
+  top: 0;
+  margin-left: 27.6%;
+  border-left: 1px solid #891d2f;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.logo {
+  width: 22%;
+  position: fixed;
+  left: 4.65%;
+  z-index: 1;
+}
+
+.user {
+  width: 391px;
+  height: 292px;
+  left: 5.33%;
+  top: 15.5%;
+
+  position: fixed;
+  z-index: 1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/User_sir_Andrew_3.png);
+  transition: 0.1s;
+}
+
+.user:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/User_sir_Andrew_Hover3.png);
+  transition: ease-in-out;
+}
+
+#menu1 {
+  position: fixed;
+  margin-top: 23.5%;
+  margin-left: 4.76%;
+  width: 400px;
+  height: 100px;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_Homepage.png);
+  background-repeat: no-repeat;
+  transition: 0.1s;
+}
+
+#menu1:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_Homepage_Hover.png);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+#menu2 {
+  position: fixed;
+  margin-top: 27.5%;
+  margin-left: 4.76%;
+  width: 400px;
+  height: 100px;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_Assignments.png);
+  background-repeat: no-repeat;
+  transition: 0.1s;
+}
+
+#menu2:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_Assignments_Hover.png);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+#menu3 {
+  position: fixed;
+  margin-top: 31.5%;
+  margin-left: 4.76%;
+  width: 400px;
+  height: 100px;
+  transition: 0.1s;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_Interns.png);
+}
+
+#menu3:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_Interns_Hover.png);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+#menu4 {
+  position: fixed;
+  margin-top: 35.5%;
+  margin-left: 4.76%;
+  width: 400px;
+  height: 100px;
+  transition: 0.1s;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_MusicPlayer_On.png);
+}
+
+#menu4:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_MusicPlayer_On_Hover.png);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+#menu5 {
+  position: fixed;
+  margin-top: 39.5%;
+  margin-left: 4.76%;
+  width: 400px;
+  height: 100px;
+  transition: 0.1s;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_Logout.png);
+}
+
+#menu5:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_Logout_Hover.png);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.beta {
+  position: fixed;
+  margin-top: 48%;
+  margin-left: 5%;
+  height: 22px;
+  width: 175px;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Beta_Version.png);
+}
+
+hr {
+  position: fixed;
+  margin-top: 50%;
+  margin-left: 4.76%;
+  height: 2px;
+  width: 400px;
+  z-index: -1;
+  background-color: #891d2f;
+  border: none;
+}
+
+.b_number {
+  position: fixed;
+  margin-top: 51%;
+  margin-left: 5%;
+  height: 23px;
+  width: 49px;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Beta_Version_Number.png);
+}
+
+.welcome_cards {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#w1 {
+  margin-top: 12%;
+  margin-left: 48%;
+  width: 398px;
+  height: 650px;
+  transform: skewY(5deg);
+  position: fixed;
+  transition: 0.1s;
+  z-index: -1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Introduction/Card_IntroJP.png);
+}
+
+#w1:hover {
+  transition: 0.1s ease-in-out;
+  scale: 1.03;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Introduction/Card_Intro0.png);
+  cursor: pointer;
+}
+
+#w2 {
+  margin-top: 10%;
+  margin-left: 55%;
+  width: 398px;
+  height: 650px;
+  transform: skewY(5deg);
+  position: fixed;
+  transition: 0.1s;
+  z-index: -2;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Patch_JP.png);
+}
+
+#w2:hover {
+  transition: 0.1s ease-in-out;
+  scale: 1.03;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Patch_ENG.png);
+  cursor: pointer;
+}
+
+#w3 {
+  margin-top: 8%;
+  margin-left: 62%;
+  width: 398px;
+  height: 650px;
+  transform: skewY(5deg);
+  position: fixed;
+  transition: 0.1s;
+  z-index: -3;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Error_JP.png);
+}
+
+#w3:hover {
+  transition: 0.1s ease-in-out;
+  scale: 1.03;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Error_ENG.png);
+  cursor: pointer;
+}
+
+.project_cards {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#image1 {
+  margin-top: 12%;
+  margin-left: 48%;
+  width: 398px;
+  height: 650px;
+  transform: skewY(5deg);
+  position: fixed;
+  transition: 0.1s;
+  z-index: -1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_SUITECLOUD_JP.png);
+}
+
+#image1:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_SUITECLOUD_ENG.png);
+  transition: 0.1s ease-in-out;
+  scale: 1.03;
+  cursor: pointer;
+}
+
+#image2 {
+  margin-top: 10%;
+  margin-left: 55%;
+  width: 398px;
+  height: 650px;
+  transform: skewY(5deg);
+  position: fixed;
+  transition: 0.1s;
+  z-index: -2;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_JP.png);
+}
+
+#image2:hover {
+  transition: 0.1s ease-in-out;
+  scale: 1.03;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_ENG.png);
+  cursor: pointer;
+}
+
+#image3 {
+  margin-top: 8%;
+  margin-left: 62%;
+  width: 398px;
+  height: 650px;
+  transform: skewY(5deg);
+  position: fixed;
+  transition: 0.1s;
+  z-index: -3;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Error_JP.png);
+}
+
+#image3:hover {
+  transition: 0.1s ease-in-out;
+  scale: 1.03;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Error_ENG.png);
+  cursor: pointer;
+}
+
+.intern_cards {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#img_int_1 {
+  margin-top: 12%;
+  margin-left: 48%;
+  width: 398px;
+  height: 650px;
+  transform: skewY(5deg);
+  position: fixed;
+  transition: 0.1s;
+  z-index: -1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Intern_Andrei_JP.png);
+}
+
+#img_int_1:hover {
+  transition: 0.1s ease-in-out;
+  scale: 1.03;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Intern_Andrei_ENG.png);
+  cursor: pointer;
+}
+
+#img_int_2 {
+  margin-top: 10%;
+  margin-left: 55%;
+  width: 398px;
+  height: 650px;
+  transform: skewY(5deg);
+  position: fixed;
+  transition: 0.1s;
+  z-index: -2;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Intern_Paula_JP2.png);
+}
+
+#img_int_2:hover {
+  transition: 0.1s ease-in-out;
+  scale: 1.03;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Intern_Paula_ENG2.png);
+  cursor: pointer;
+}
+
+#img_int_3 {
+  margin-top: 8%;
+  margin-left: 62%;
+  width: 398px;
+  height: 650px;
+  transform: skewY(5deg);
+  position: fixed;
+  transition: 0.1s;
+  z-index: -3;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Error_JP.png);
+}
+
+#img_int_3:hover {
+  transition: 0.1s ease-in-out;
+  scale: 1.03;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Error_ENG.png);
+  cursor: pointer;
+}

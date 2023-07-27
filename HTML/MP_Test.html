@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Main Page</title>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="utf-8"
+    />
+    <script type="text/javascript" src="/JAVASCRIPT/Main_Page.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/Main_Page.css" />
+  </head>
+  <body>
+    <audio
+      src="/RESOURCES/MP3/Cyberpunk_Theme.mp3"
+      id="BGM"
+      controls
+      autoplay
+      loop
+    ></audio>
+
+    <!-- GLITCH ON CLICK -->
+    <video
+      src="/RESOURCES/BACKGROUNDS/BG_Glitch.mp4"
+      id="Glitch1-BG"
+      preload="none"
+      onended="glitchEnd1()"
+    ></video>
+    <video
+      src="/RESOURCES/BACKGROUNDS/BG_Glitch.mp4"
+      id="Glitch2-BG"
+      preload="none"
+      onended="glitchEnd2()"
+    ></video>
+    <video
+      src="/RESOURCES/BACKGROUNDS/BG_Glitch.mp4"
+      id="Glitch3-BG"
+      preload="none"
+      onended="glitchEnd3()"
+    ></video>
+
+    <!-- GLITCH ON CLICK -->
+    <video
+      src="/RESOURCES/BACKGROUNDS/Night_City4.mp4"
+      id="vid-BG"
+      autoplay
+      loop
+      muted
+    ></video>
+
+    <video
+      src="/RESOURCES/ADOBE_PREMIERE_PRO/Sample_SideBar4.mp4"
+      id="sidebar"
+      autoplay
+      loop
+      muted
+    ></video>
+
+    <div class="hr">
+      <div class="vleft"></div>
+      <div class="vright"></div>
+    </div>
+
+    <div class="mainbar">
+      <div class="sidebar"></div>
+      <img class="logo" src="/RESOURCES/ADOBE_PHOTOSHOP/ITG_Logo.png" alt="" />
+      <div class="user" onmouseover="UMO()"></div>
+      <div onmouseover="SB1MO()" onclick="M1BTN()" id="menu1"></div>
+      <div onmouseover="SB2MO()" onclick="M2BTN()" id="menu2"></div>
+      <div onmouseover="SB3MO()" onclick="M3BTN()" id="menu3"></div>
+      <div
+        onmouseover="SB4MO()"
+        onmouseleave="SB4ML()"
+        id="menu4"
+        onchange="SB4OC()"
+        onclick="M4BTN()"
+      ></div>
+      <div onmouseover="SB5MO()" id="menu5"></div>
+    </div>
+
+    <hr />
+    <div class="beta"></div>
+    <div class="b_number"></div>
+
+    <div class="welcome_cards" id="welcome_cards">
+      <div onmouseover="w1MO()" onmouseleave="w1ML()" id="w1"></div>
+      <div onmouseover="w2MO()" onmouseleave="w2ML()" id="w2"></div>
+      <div onmouseover="w3MO()" onmouseleave="w3ML()" id="w3"></div>
+    </div>
+
+    <div class="project_cards" id="project_cards">
+      <div onmouseover="img1MO()" onmouseleave="img1ML()" id="image1"></div>
+      <div onmouseover="img2MO()" onmouseleave="img2ML()" id="image2"></div>
+      <div onmouseover="img3MO()" onmouseleave="img3ML()" id="image3"></div>
+    </div>
+
+    <div class="intern_cards" id="intern_cards">
+      <div
+        onmouseover="int_1MO()"
+        onmouseleave="int_1ML()"
+        id="img_int_1"
+      ></div>
+      <div
+        onmouseover="int_2MO()"
+        onmouseleave="int_2ML()"
+        id="img_int_2"
+      ></div>
+      <div
+        onmouseover="int_3MO()"
+        onmouseleave="int_3ML()"
+        id="img_int_3"
+      ></div>
+    </div>
+  </body>
+</html>

@@ -11,6 +11,13 @@
     <link rel="stylesheet" type="text/css" href="../CSS/Main_Page.css" />
   </head>
   <body>
+    <video
+      src="/RESOURCES/BACKGROUNDS/ITG_Logo_LoadingScreen.mp4"
+      id="LoadingScreen"
+      onclick="LScreenClick()"
+      loop
+      autoplay
+    ></video>
     <audio
       src="/RESOURCES/MP3/Cyberpunk_Theme.mp3"
       id="BGM"
@@ -22,28 +29,54 @@
     <!-- GLITCH ON CLICK -->
     <video
       src="/RESOURCES/BACKGROUNDS/BG_Glitch.mp4"
+      id="Glitch0-BG"
+      onended="glitchEnd0()"
+    ></video>
+
+    <video
+      src="/RESOURCES/BACKGROUNDS/BG_Glitch.mp4"
       id="Glitch1-BG"
-      preload="none"
       onended="glitchEnd1()"
     ></video>
     <video
       src="/RESOURCES/BACKGROUNDS/BG_Glitch.mp4"
       id="Glitch2-BG"
-      preload="none"
       onended="glitchEnd2()"
     ></video>
     <video
       src="/RESOURCES/BACKGROUNDS/BG_Glitch.mp4"
       id="Glitch3-BG"
-      preload="none"
       onended="glitchEnd3()"
     ></video>
 
-    <!-- GLITCH ON CLICK -->
+    <!-- GLITCH ON CLICK END -->
+
+    <!-- BACKGROUND WALLPAPERS -->
     <video
       src="/RESOURCES/BACKGROUNDS/Night_City4.mp4"
       id="vid-BG"
       autoplay
+      loop
+      muted
+    ></video>
+
+    <video
+      src="/RESOURCES/BACKGROUNDS/Cyberpunk_Recruit.mp4"
+      id="vid-BG1"
+      loop
+      muted
+    ></video>
+
+    <video
+      src="/RESOURCES/BACKGROUNDS/Cyberpunk_World.mp4"
+      id="vid-BG2"
+      loop
+      muted
+    ></video>
+
+    <video
+      src="/RESOURCES/BACKGROUNDS/Cyberpunk_Gangs.mp4"
+      id="vid-BG3"
       loop
       muted
     ></video>
@@ -75,7 +108,7 @@
         onchange="SB4OC()"
         onclick="M4BTN()"
       ></div>
-      <div onmouseover="SB5MO()" id="menu5"></div>
+      <div onmouseover="SB5MO()" onclick="SB5OC()" id="menu5"></div>
     </div>
 
     <hr />
@@ -89,10 +122,47 @@
     </div>
 
     <div class="project_cards" id="project_cards">
-      <div onmouseover="img1MO()" onmouseleave="img1ML()" id="image1"></div>
-      <div onmouseover="img2MO()" onmouseleave="img2ML()" id="image2"></div>
-      <div onmouseover="img3MO()" onmouseleave="img3ML()" id="image3"></div>
+      <div
+        onmouseover="img1MO()"
+        onmouseleave="img1ML()"
+        onclick="img1OC()"
+        id="image1"
+      ></div>
+      <div
+        onmouseover="img2MO()"
+        onmouseleave="img2ML()"
+        onclick="img2OC()"
+        id="image2"
+      ></div>
+      <div
+        onmouseover="img3MO()"
+        onmouseleave="img3ML()"
+        onclick="img3OC()"
+        id="image3"
+      ></div>
     </div>
+
+    <!-- SUITECLOUD STEPS -->
+    <div class="sc_step" id="sc_step"></div>
+
+    <div class="prev" id="prev" onmouseover="prevMO()" onclick="prevOC()"></div>
+    <div class="next" id="next" onmouseover="nextMO()" onclick="nextOC()"></div>
+
+    <!-- M2M STEPS-->
+    <div class="m2m_step" id="m2m_step"></div>
+
+    <div
+      class="prev2"
+      id="prev2"
+      onmouseover="prev2MO()"
+      onclick="prev2OC()"
+    ></div>
+    <div
+      class="next2"
+      id="next2"
+      onmouseover="next2MO()"
+      onclick="next2OC()"
+    ></div>
 
     <div class="intern_cards" id="intern_cards">
       <div

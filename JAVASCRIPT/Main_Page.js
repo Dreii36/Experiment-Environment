@@ -1,3 +1,21 @@
+//LOADING SCREEN
+function LScreenClick() {
+  document.getElementById("LoadingScreen").style.visibility = "hidden";
+  document.getElementById("LoadingScreen").style.opacity = "0";
+  const hover = new Audio("../RESOURCES/MP3/Hover_Audio2.mp3");
+  hover.play();
+  document.getElementById("Glitch0-BG").style.visibility = "visible";
+  document.getElementById("Glitch0-BG").style.opacity = "1";
+  document.getElementById("Glitch0-BG").style.zIndex = "2";
+  document.getElementById("Glitch0-BG").play();
+}
+
+//GLITCH 0
+function glitchEnd0() {
+  document.getElementById("Glitch0-BG").style.visibility = "hidden";
+  document.getElementById("Glitch0-BG").style.opacity = "0";
+}
+
 //USER
 function UMO() {
   const hover = new Audio("../RESOURCES/MP3/Hover_Audio4.mp3");
@@ -19,6 +37,22 @@ function glitchEnd1() {
   //documentation cards
   document.getElementById("project_cards").style.visibility = "hidden";
   document.getElementById("project_cards").style.opacity = "0";
+  //suitecloud steps
+  document.getElementById("sc_step").style.visibility = "hidden";
+  document.getElementById("sc_step").style.opacity = "0";
+  //SUITECLOUD BUTTONS
+  document.getElementById("prev").style.visibility = "hidden";
+  document.getElementById("prev").style.opacity = "0";
+  document.getElementById("next").style.visibility = "hidden";
+  document.getElementById("next").style.opacity = "0";
+  //m2m steps
+  document.getElementById("m2m_step").style.visibility = "hidden";
+  document.getElementById("m2m_step").style.opacity = "0";
+  //M2M BUTTONS
+  document.getElementById("prev2").style.visibility = "hidden";
+  document.getElementById("prev2").style.opacity = "0";
+  document.getElementById("next2").style.visibility = "hidden";
+  document.getElementById("next2").style.opacity = "0";
   //intern cards
   document.getElementById("intern_cards").style.visibility = "hidden";
   document.getElementById("intern_cards").style.opacity = "0";
@@ -32,6 +66,16 @@ function M1BTN() {
   document.getElementById("Glitch1-BG").style.visibility = "visible";
   document.getElementById("Glitch1-BG").style.opacity = "1";
   document.getElementById("Glitch1-BG").style.zIndex = "0";
+  //CHANGE BACKGROUND
+  document.getElementById("vid-BG").style.visibility = "hidden";
+  document.getElementById("vid-BG").style.opacity = "0";
+  document.getElementById("vid-BG1").style.visibility = "visible";
+  document.getElementById("vid-BG1").style.opacity = "1";
+  document.getElementById("vid-BG1").play();
+  document.getElementById("vid-BG2").style.visibility = "hidden";
+  document.getElementById("vid-BG2").style.opacity = "0";
+  document.getElementById("vid-BG3").style.visibility = "hidden";
+  document.getElementById("vid-BG3").style.opacity = "0";
 }
 //SIDEBAR 2
 function SB2MO() {
@@ -46,6 +90,22 @@ function glitchEnd2() {
   //documentation cards
   document.getElementById("project_cards").style.visibility = "visible";
   document.getElementById("project_cards").style.opacity = "1";
+  //suitecloud steps
+  document.getElementById("sc_step").style.visibility = "hidden";
+  document.getElementById("sc_step").style.opacity = "0";
+  //SUITECLOUD BUTTONS
+  document.getElementById("prev").style.visibility = "hidden";
+  document.getElementById("prev").style.opacity = "0";
+  document.getElementById("next").style.visibility = "hidden";
+  document.getElementById("next").style.opacity = "0";
+  //m2m steps
+  document.getElementById("m2m_step").style.visibility = "hidden";
+  document.getElementById("m2m_step").style.opacity = "0";
+  //M2M BUTTONS
+  document.getElementById("prev2").style.visibility = "hidden";
+  document.getElementById("prev2").style.opacity = "0";
+  document.getElementById("next2").style.visibility = "hidden";
+  document.getElementById("next2").style.opacity = "0";
   //homepage cards
   document.getElementById("welcome_cards").style.visibility = "hidden";
   document.getElementById("welcome_cards").style.opacity = "0";
@@ -53,6 +113,186 @@ function glitchEnd2() {
   //intern cards
   document.getElementById("intern_cards").style.visibility = "hidden";
   document.getElementById("intern_cards").style.opacity = "0";
+}
+
+//nextprev btn sounds
+function prevMO() {
+  const hover = new Audio("../RESOURCES/MP3/Hover_Audio4.mp3");
+  hover.play();
+}
+
+function nextMO() {
+  const hover = new Audio("../RESOURCES/MP3/Hover_Audio4.mp3");
+  hover.play();
+}
+
+function prev2MO() {
+  const hover = new Audio("../RESOURCES/MP3/Hover_Audio4.mp3");
+  hover.play();
+}
+
+function next2MO() {
+  const hover = new Audio("../RESOURCES/MP3/Hover_Audio4.mp3");
+  hover.play();
+}
+
+//SUIIECLOUD STEPS TUTORIAL W BUTTONS
+var steps = 0;
+var steps2 = 0;
+function changeStep() {
+  if (steps == 0) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Prerequisites.png')";
+  } else if (steps == 1) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step1And2.png')";
+  } else if (steps == 2) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step3.png')";
+  } else if (steps == 3) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step4And5.png')";
+  } else if (steps == 4) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step6And7.png')";
+  } else if (steps == 5) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step8.png')";
+  } else if (steps == 6) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step8.1And8.2.png')";
+  } else if (steps == 7) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step8.3And9.png')";
+  } else if (steps == 8) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step10And11.png')";
+  } else if (steps == 9) {  
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step12And13.png')";
+  } else if (steps == 10) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step13.1.png')";
+  } else if (steps == 11) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step14And14.1.png')";
+  } else if (steps == 12) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step14.2And14.3.png')";
+  } else if (steps == 13) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step14.4And14.5.png')";
+  } else if (steps == 14) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step14.6.png')";
+  } else if (steps == 15) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step14.7.png')";
+  } else if (steps == 16) {
+    document.getElementById("sc_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Step14.8.png')";
+  }
+}
+
+function changeStep2() {
+  if (steps2 == 0) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Prerequisites.png')";
+  } else if (steps2 == 1) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step1.0.png')";
+  } else if (steps2 == 2) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step1.1.png')";
+  } else if (steps2 == 3) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step1.2.png')";
+  } else if (steps2 == 4) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step2.0.png')";
+  } else if (steps2 == 5) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step2.1.png')";
+  } else if (steps2 == 6) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step2.2.png')";
+  } else if (steps2 == 7) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step2.3.png')";
+  } else if (steps2 == 8) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step2.4.png')";
+  } else if (steps2 == 9) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step2.5.png')";
+  } else if (steps2 == 10) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step3.0.png')";
+  } else if (steps2 == 11) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step3.1.png')";
+  } else if (steps2 == 12) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step3.2.png')";
+  } else if (steps2 == 13) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step4.0.png')";
+  } else if (steps2 == 14) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step4.1.png')";
+  } else if (steps2 == 15) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step4.2.png')";
+  } else if (steps2 == 16) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step4.3.png')";
+  } else if (steps2 == 17) {
+    document.getElementById("m2m_step").style.background =
+      "url('../RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Step4.4.png')";
+  }
+}
+
+//nextprev button functions
+function prevOC() {
+  const click = new Audio("../RESOURCES/MP3/Hover_Audio2.mp3");
+  click.play();
+  if (steps < 1) {
+    steps = 0;
+  } else {
+    steps--;
+  }
+  changeStep();
+}
+function nextOC() {
+  const click = new Audio("../RESOURCES/MP3/Hover_Audio2.mp3");
+  click.play();
+  if (steps > 15) {
+    steps = 16;
+  } else {
+    steps++;
+  }
+  changeStep();
+}
+
+function prev2OC() {
+  const click = new Audio("../RESOURCES/MP3/Hover_Audio2.mp3");
+  click.play();
+  if (steps2 < 1) {
+    steps2 = 0;
+  } else {
+    steps2--;
+  }
+  changeStep2();
+}
+function next2OC() {
+  const click = new Audio("../RESOURCES/MP3/Hover_Audio2.mp3");
+  click.play();
+  if (steps2 > 16) {
+    steps2 = 17;
+  } else {
+    steps2++;
+  }
+  changeStep2();
 }
 
 function M2BTN() {
@@ -63,6 +303,46 @@ function M2BTN() {
   document.getElementById("Glitch2-BG").style.visibility = "visible";
   document.getElementById("Glitch2-BG").style.opacity = "1";
   document.getElementById("Glitch2-BG").style.zIndex = "0";
+  //CHANGE BACKGROUND
+  document.getElementById("vid-BG").style.visibility = "hidden";
+  document.getElementById("vid-BG").style.opacity = "0";
+  document.getElementById("vid-BG1").style.visibility = "hidden";
+  document.getElementById("vid-BG1").style.opacity = "0";
+  document.getElementById("vid-BG2").style.visibility = "visible";
+  document.getElementById("vid-BG2").style.opacity = "1";
+  document.getElementById("vid-BG2").play();
+  document.getElementById("vid-BG3").style.visibility = "hidden";
+  document.getElementById("vid-BG3").style.opacity = "0";
+}
+//SUITECLOUD STEPS
+function img1OC() {
+  const click = new Audio("../RESOURCES/MP3/Hover_Audio2.mp3");
+  click.play();
+  document.getElementById("project_cards").style.visibility = "hidden";
+  document.getElementById("project_cards").style.opacity = "0";
+  document.getElementById("sc_step").style.visibility = "visible";
+  document.getElementById("sc_step").style.opacity = "1";
+  //SUITECLOUD BUTTONS
+  document.getElementById("prev").style.visibility = "visible";
+  document.getElementById("prev").style.opacity = "1";
+  document.getElementById("next").style.visibility = "visible";
+  document.getElementById("next").style.opacity = "1";
+}
+
+function img2OC() {
+  const click = new Audio("../RESOURCES/MP3/Hover_Audio2.mp3");
+  click.play();
+  document.getElementById("project_cards").style.visibility = "hidden";
+  document.getElementById("project_cards").style.opacity = "0";
+  document.getElementById("sc_step").style.visibility = "hidden";
+  document.getElementById("sc_step").style.opacity = "0";
+  document.getElementById("m2m_step").style.visibility = "visible";
+  document.getElementById("m2m_step").style.opacity = "1";
+  //SUITECLOUD BUTTONS
+  document.getElementById("prev2").style.visibility = "visible";
+  document.getElementById("prev2").style.opacity = "1";
+  document.getElementById("next2").style.visibility = "visible";
+  document.getElementById("next2").style.opacity = "1";
 }
 
 //SIDEBAR 3
@@ -83,6 +363,22 @@ function glitchEnd3() {
   //documentation cards
   document.getElementById("project_cards").style.visibility = "hidden";
   document.getElementById("project_cards").style.opacity = "0";
+  //SUITECLOUD BUTTONS
+  document.getElementById("prev").style.visibility = "hidden";
+  document.getElementById("prev").style.opacity = "0";
+  document.getElementById("next").style.visibility = "hidden";
+  document.getElementById("next").style.opacity = "0";
+  //suitecloud steps
+  //m2m steps
+  document.getElementById("m2m_step").style.visibility = "hidden";
+  document.getElementById("m2m_step").style.opacity = "0";
+  //M2M BUTTONS
+  document.getElementById("prev2").style.visibility = "hidden";
+  document.getElementById("prev2").style.opacity = "0";
+  document.getElementById("next2").style.visibility = "hidden";
+  document.getElementById("next2").style.opacity = "0";
+  document.getElementById("sc_step").style.visibility = "hidden";
+  document.getElementById("sc_step").style.opacity = "0";
 }
 
 function M3BTN() {
@@ -93,6 +389,16 @@ function M3BTN() {
   document.getElementById("Glitch3-BG").style.visibility = "visible";
   document.getElementById("Glitch3-BG").style.opacity = "1";
   document.getElementById("Glitch3-BG").style.zIndex = "0";
+  //CHANGE BACKGROUND
+  document.getElementById("vid-BG").style.visibility = "hidden";
+  document.getElementById("vid-BG").style.opacity = "0";
+  document.getElementById("vid-BG1").style.visibility = "hidden";
+  document.getElementById("vid-BG1").style.opacity = "0";
+  document.getElementById("vid-BG2").style.visibility = "hidden";
+  document.getElementById("vid-BG2").style.opacity = "0";
+  document.getElementById("vid-BG3").style.visibility = "visible";
+  document.getElementById("vid-BG3").style.opacity = "1";
+  document.getElementById("vid-BG3").play();
 }
 //SIDEBAR 4
 var ishover = false;
@@ -153,6 +459,10 @@ function M4BTN() {
 function SB5MO() {
   const hover = new Audio("../RESOURCES/MP3/Hover_Audio4.mp3");
   hover.play();
+}
+
+function SB5OC(){
+  window.close()
 }
 
 //CARDS//

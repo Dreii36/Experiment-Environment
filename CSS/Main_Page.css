@@ -2,8 +2,61 @@ body {
   text-align: center;
 }
 
+#LoadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  cursor: pointer;
+}
+
 audio {
   display: none;
+}
+
+#black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+#black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+#Glitch0-BG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
 }
 
 #Glitch1-BG {
@@ -54,6 +107,45 @@ audio {
   min-width: 100%;
   min-height: 100%;
   z-index: -10;
+}
+
+#vid-BG1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#vid-BG2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#vid-BG3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+  opacity: 0;
+  visibility: hidden;
 }
 
 #mainbar {
@@ -149,6 +241,106 @@ audio {
 
 #menu2:hover {
   background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Sidebar_Assignments_Hover.png);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.sc_step {
+  margin-top: 12%;
+  margin-left: 43%;
+  width: 800px;
+  height: 650px;
+  position: fixed;
+  z-index: -1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_SuiteCloud_Steps/Card_Prerequisites.png);
+  visibility: hidden;
+  opacity: 0;
+}
+
+#prev {
+  margin-top: 48.8%;
+  margin-left: 43%;
+  width: 194px;
+  height: 73px;
+  position: fixed;
+  z-index: -1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/NB_Buttons/Previous_Button.png);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+#prev:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/NB_Buttons/Previous_Button_Hover.png);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+#next {
+  margin-top: 48.8%;
+  margin-left: 74.7%;
+  width: 194px;
+  height: 73px;
+  position: fixed;
+  z-index: -1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/NB_Buttons/Next_Button.png);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+#next:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/NB_Buttons/Next_Button_Hover.png);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.m2m_step {
+  margin-top: 12%;
+  margin-left: 43%;
+  width: 800px;
+  height: 650px;
+  position: fixed;
+  z-index: -1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_M2M_Steps/Card_Prerequisites.png);
+  visibility: hidden;
+  opacity: 0;
+}
+
+#prev2 {
+  margin-top: 48.8%;
+  margin-left: 43%;
+  width: 194px;
+  height: 73px;
+  position: fixed;
+  z-index: -1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/NB_Buttons/Previous_Button.png);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+#prev2:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/NB_Buttons/Previous_Button_Hover.png);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+#next2 {
+  margin-top: 48.8%;
+  margin-left: 74.7%;
+  width: 194px;
+  height: 73px;
+  position: fixed;
+  z-index: -1;
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/NB_Buttons/Next_Button.png);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+#next2:hover {
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/NB_Buttons/Next_Button_Hover.png);
   scale: 1.05;
   cursor: pointer;
 }
@@ -251,7 +443,7 @@ hr {
 #w1:hover {
   transition: 0.1s ease-in-out;
   scale: 1.03;
-  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Introduction/Card_Intro0.png);
+  background-image: url(/RESOURCES/ADOBE_PHOTOSHOP/Card_Introduction/Card_Intro4.gif);
   cursor: pointer;
 }
 
